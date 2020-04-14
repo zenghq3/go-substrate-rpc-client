@@ -67,7 +67,7 @@ func NewMetadataV11() *Metadata {
 	return &Metadata{
 		Version:       11,
 		IsMetadataV11: true,
-		AsMetadataV11: MetadataV11{MetadataV10: MetadataV10{Modules: make([]ModuleMetadataV10, 0)}},
+		AsMetadataV11: MetadataV11{Modules: make([]ModuleMetadataV11, 0)},
 	}
 }
 
