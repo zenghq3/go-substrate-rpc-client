@@ -14,33 +14,18 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package rpc
+package payment
 
 import (
 	"github.com/centrifuge/go-substrate-rpc-client/client"
-	"github.com/centrifuge/go-substrate-rpc-client/rpc/author"
-	"github.com/centrifuge/go-substrate-rpc-client/rpc/chain"
-	"github.com/centrifuge/go-substrate-rpc-client/rpc/payment"
-	"github.com/centrifuge/go-substrate-rpc-client/rpc/state"
-	"github.com/centrifuge/go-substrate-rpc-client/rpc/system"
 )
 
-type RPC struct {
-	Author  *author.Author
-	Chain   *chain.Chain
-	State   *state.State
-	System  *system.System
-	Payment *payment.Payment
-	client  client.Client
+// Payment exposes methods for retrieval of payment
+type Payment struct {
+	client client.Client
 }
 
-func NewRPC(cl client.Client) *RPC {
-	return &RPC{
-		Author:  author.NewAuthor(cl),
-		Chain:   chain.NewChain(cl),
-		State:   state.NewState(cl),
-		System:  system.NewSystem(cl),
-		Payment: payment.NewPayment(cl),
-		client:  cl,
-	}
+// NewPayment creates a new Payment struct
+func NewPayment(cl client.Client) *Payment {
+	return &Payment{cl}
 }
