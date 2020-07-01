@@ -198,3 +198,20 @@ func (m *Metadata) FindStorageEntryMetadata(module string, fn string) (StorageEn
 		return nil, fmt.Errorf("unsupported metadata version")
 	}
 }
+
+func (m *Metadata) FindConstantMetadata(module string, constant string) (ModuleConstantMetadataV6, error) {
+	switch {
+	case m.IsMetadataV7:
+		return m.AsMetadataV7.FindConstantMetadata(module, constant)
+	case m.IsMetadataV8:
+		return m.AsMetadataV8.FindConstantMetadata(module, constant)
+	case m.IsMetadataV9:
+		return m.AsMetadataV9.FindConstantMetadata(module, constant)
+	case m.IsMetadataV10:
+		return m.AsMetadataV10.FindConstantMetadata(module, constant)
+	case m.IsMetadataV11:
+		return m.AsMetadataV11.FindConstantMetadata(module, constant)
+	default:
+		return ModuleConstantMetadataV6{}, fmt.Errorf("unsupported metadata version")
+	}
+}
