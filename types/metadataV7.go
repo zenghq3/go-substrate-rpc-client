@@ -104,6 +104,22 @@ func (m *MetadataV7) FindStorageEntryMetadata(module string, fn string) (Storage
 	return nil, fmt.Errorf("module %v not found in metadata", module)
 }
 
+func (m *MetadataV7) FindConstantMetadata(module string, constant string) (ModuleConstantMetadataV6, error) {
+	for _, mod := range m.Modules {
+		if !strings.EqualFold(string(mod.Name), module) {
+			continue
+		}
+		for _, s := range mod.Constants {
+			if !strings.EqualFold(string(s.Name), constant) {
+				continue
+			}
+			return s, nil
+		}
+		return ModuleConstantMetadataV6{}, fmt.Errorf("constant %v not found within module %v", constant, module)
+	}
+	return ModuleConstantMetadataV6{}, fmt.Errorf("module %v not found in metadata", module)
+}
+
 type ModuleMetadataV7 struct {
 	Name       Text
 	HasStorage bool
