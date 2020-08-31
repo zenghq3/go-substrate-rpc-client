@@ -17,8 +17,8 @@
 package state
 
 import (
-	"github.com/centrifuge/go-substrate-rpc-client/client"
-	"github.com/centrifuge/go-substrate-rpc-client/types"
+	"github.com/zenghq3/go-substrate-rpc-client/client"
+	"github.com/zenghq3/go-substrate-rpc-client/types"
 )
 
 // GetMetadata returns the metadata at the given block

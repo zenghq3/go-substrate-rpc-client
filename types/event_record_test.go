@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"testing"
 
-	. "github.com/centrifuge/go-substrate-rpc-client/types"
+	. "github.com/zenghq3/go-substrate-rpc-client/types"
 	"github.com/stretchr/testify/assert"
 )
 

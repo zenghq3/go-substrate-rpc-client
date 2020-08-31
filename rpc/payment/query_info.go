@@ -17,7 +17,7 @@
 package payment
 
 import (
-	"github.com/centrifuge/go-substrate-rpc-client/types"
+	"github.com/zenghq3/go-substrate-rpc-client/types"
 )
 
 // QueryInfo retrieves the fee information for an encoded extrinsic

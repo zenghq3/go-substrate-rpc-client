@@ -17,7 +17,7 @@
 package author
 
 import (
-	"github.com/centrifuge/go-substrate-rpc-client/client"
+	"github.com/zenghq3/go-substrate-rpc-client/client"
 )
 
 // Author exposes methods for authoring of network items

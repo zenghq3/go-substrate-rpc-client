@@ -17,7 +17,7 @@
 package payment
 
 import (
-	"github.com/centrifuge/go-substrate-rpc-client/client"
+	"github.com/zenghq3/go-substrate-rpc-client/client"
 )
 
 // Payment exposes methods for retrieval of payment

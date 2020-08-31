@@ -6,9 +6,9 @@ import (
 	"hash"
 	"strings"
 
-	blake2 "github.com/centrifuge/go-substrate-rpc-client/crypto/blake2b"
-	"github.com/centrifuge/go-substrate-rpc-client/scale"
-	"github.com/centrifuge/go-substrate-rpc-client/xxhash"
+	blake2 "github.com/zenghq3/go-substrate-rpc-client/crypto/blake2b"
+	"github.com/zenghq3/go-substrate-rpc-client/scale"
+	"github.com/zenghq3/go-substrate-rpc-client/xxhash"
 	"golang.org/x/crypto/blake2b"
 )
 

@@ -17,7 +17,7 @@
 package author
 
 import (
-	"github.com/centrifuge/go-substrate-rpc-client/types"
+	"github.com/zenghq3/go-substrate-rpc-client/types"
 )
 
 // SubmitExtrinsic will submit a fully formatted extrinsic for block inclusion

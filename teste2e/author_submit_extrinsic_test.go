@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	gsrpc "github.com/centrifuge/go-substrate-rpc-client"
-	"github.com/centrifuge/go-substrate-rpc-client/config"
-	"github.com/centrifuge/go-substrate-rpc-client/signature"
-	"github.com/centrifuge/go-substrate-rpc-client/types"
+	gsrpc "github.com/zenghq3/go-substrate-rpc-client"
+	"github.com/zenghq3/go-substrate-rpc-client/config"
+	"github.com/zenghq3/go-substrate-rpc-client/signature"
+	"github.com/zenghq3/go-substrate-rpc-client/types"
 )
 
 func TestChain_SubmitExtrinsic(t *testing.T) {

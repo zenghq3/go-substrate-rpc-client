@@ -21,11 +21,11 @@ import (
 	"math/big"
 	"time"
 
-	gsrpc "github.com/centrifuge/go-substrate-rpc-client"
-	"github.com/centrifuge/go-substrate-rpc-client/config"
-	"github.com/centrifuge/go-substrate-rpc-client/signature"
+	gsrpc "github.com/zenghq3/go-substrate-rpc-client"
+	"github.com/zenghq3/go-substrate-rpc-client/config"
+	"github.com/zenghq3/go-substrate-rpc-client/signature"
 
-	"github.com/centrifuge/go-substrate-rpc-client/types"
+	"github.com/zenghq3/go-substrate-rpc-client/types"
 )
 
 func Example_simpleConnect() {

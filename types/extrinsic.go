@@ -23,8 +23,8 @@ import (
 	"io"
 	"strings"
 
-	"github.com/centrifuge/go-substrate-rpc-client/scale"
-	"github.com/centrifuge/go-substrate-rpc-client/signature"
+	"github.com/zenghq3/go-substrate-rpc-client/scale"
+	"github.com/zenghq3/go-substrate-rpc-client/signature"
 )
 
 const (

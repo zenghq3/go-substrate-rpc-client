@@ -21,7 +21,7 @@ import (
 
 	"golang.org/x/crypto/blake2b"
 
-	. "github.com/centrifuge/go-substrate-rpc-client/types"
+	. "github.com/zenghq3/go-substrate-rpc-client/types"
 )
 
 func ExampleExampleTuple() {

@@ -17,7 +17,7 @@
 package state
 
 import (
-	"github.com/centrifuge/go-substrate-rpc-client/client"
+	"github.com/zenghq3/go-substrate-rpc-client/client"
 )
 
 // State exposes methods for querying state
